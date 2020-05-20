@@ -33,6 +33,34 @@ class ItemModal extends Component {
         return /*html*/`
             <div class="modal ${!visible ? 'hidden' : ''}">
                 <div class="overlay"></div>
+<style>
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
                 <div class="modal-content">
                     <h1>${item.item.name}</h1>
 <title>${item.item.name}</title>
@@ -41,6 +69,9 @@ class ItemModal extends Component {
                     <section class="cost">
                         <img src="https://fortnite-public-files.theapinetwork.com/fortnite-vbucks-icon.png">
                         <h2>${item.store.cost}</h2>
+<div class="tooltip">Check The Vbucks
+ <span class="tooltiptext">${item.store.cost}</span></div>
+
                     </section>
                     <button id="close-modal">ⓧ</button>
                 </div>
