@@ -69,9 +69,10 @@ class ItemModal extends Component {
                     <section class="cost">
                         <img src="https://fortnite-public-files.theapinetwork.com/fortnite-vbucks-icon.png">
                         <h2>${item.store.cost}</h2>
-<div class="tooltip">Check The Vbucks
- <span class="tooltiptext">${item.store.cost}</span></div>
 
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">${item.store.cost}</span>
+</div>
                     </section>
                     <button id="close-modal">ⓧ</button>
                 </div>
