@@ -35,6 +35,7 @@ class ItemModal extends Component {
                 <div class="overlay"></div>
                 <div class="modal-content">
                     <h1>${item.item.name}</h1>
+<title>${item.item.name}</title>
                     <h3>${item.item.rarity} ${item.item.type}</h3>
                     <img src="${item.item.images.background}">
                     <section class="cost">
