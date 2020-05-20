@@ -20,7 +20,6 @@ class Header extends Component {
             <header>
                 <h1>FORTNITE Item Shop</h1>
                 <h3>View your favorite items from in-game!</h3>
-            /* <h3>Support Creator Code: ${myShows[Math.floor(Math.random() * myShows.length)]}</h3> */ 
             </header>
         `;
     }
