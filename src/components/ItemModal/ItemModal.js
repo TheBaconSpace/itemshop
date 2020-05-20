@@ -35,12 +35,11 @@ class ItemModal extends Component {
                 <div class="overlay"></div>
                 <div class="modal-content">
                     <h1>${item.item.name}</h1>
-<link rel="icon" href="${item.item.images.background}" sizes="16x16">
-<title>${item.item.name}</title>
                     <h3>${item.item.rarity} ${item.item.type}</h3>
                     <img src="${item.item.images.background}">
+                    <progress id="rating" max="5" value="${item.item.ratings.avgStars}"></progress>
                     <section class="cost">
-                        <img src="https://fortnite-public-files.theapinetwork.com/fortnite-vbucks-icon.png">
+                        <img src="../../../assets/vbuck.png">
                         <h2>${item.store.cost}</h2>
                     </section>
                     <button id="close-modal">ⓧ</button>
